@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcss_recognition.a CMakeFiles/css_recognition.dir/src/CSS.cpp.o CMakeFiles/css_recognition.dir/src/Recognition.cpp.o
+/usr/bin/ranlib libcss_recognition.a

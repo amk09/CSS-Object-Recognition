@@ -1,0 +1,1053 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      The system is: Linux - 5.14.0-284.11.1.el9_2_cifs.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/3.26.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X"
+      binary: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X
+        
+        Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_59703/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59703.dir/build.make CMakeFiles/cmTC_59703.dir/build
+        gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X'
+        Building C object CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o -c /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_59703.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_59703.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64-v2 -version -o /tmp/ccEqXi00.s
+        GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /oscar/runtime/software/external/opencv/4.6.0/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: c17ca59e3175c87d67f78aafb97927e1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_59703.dir/'
+         as -v --64 -o CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o /tmp/ccEqXi00.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_59703
+        /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59703.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o -o cmTC_59703 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_59703' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_59703.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5QTrTp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_59703 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_59703' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_59703.'
+        gmake[1]: Leaving directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/oscar/runtime/software/external/opencv/4.6.0/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/oscar/runtime/software/external/opencv/4.6.0/include] ==> [/oscar/runtime/software/external/opencv/4.6.0/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/oscar/runtime/software/external/opencv/4.6.0/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X]
+        ignore line: []
+        ignore line: [Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_59703/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59703.dir/build.make CMakeFiles/cmTC_59703.dir/build]
+        ignore line: [gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HYNU8X']
+        ignore line: [Building C object CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o -c /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_59703.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_59703.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64-v2 -version -o /tmp/ccEqXi00.s]
+        ignore line: [GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /oscar/runtime/software/external/opencv/4.6.0/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: c17ca59e3175c87d67f78aafb97927e1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_59703.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o /tmp/ccEqXi00.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_59703]
+        ignore line: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59703.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o -o cmTC_59703 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_59703' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_59703.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5QTrTp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_59703 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc5QTrTp.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_59703] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_59703.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/oscar/runtime/software/external/opencv/4.6.0/lib64;/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze"
+      binary: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze
+        
+        Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4ef5c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4ef5c.dir/build.make CMakeFiles/cmTC_4ef5c.dir/build
+        gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze'
+        Building CXX object CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o -c /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4ef5c.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4ef5c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/cct22Ba2.s
+        GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /oscar/runtime/software/external/opencv/4.6.0/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 2b66e0c66ead0d50ab6859cd4e0e015c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4ef5c.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o /tmp/cct22Ba2.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4ef5c
+        /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ef5c.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4ef5c 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4ef5c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_4ef5c.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6SiANm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4ef5c /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4ef5c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_4ef5c.'
+        gmake[1]: Leaving directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/oscar/runtime/software/external/opencv/4.6.0/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+          add: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/oscar/runtime/software/external/opencv/4.6.0/include] ==> [/oscar/runtime/software/external/opencv/4.6.0/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+        collapse include dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux] ==> [/usr/include/c++/11/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/oscar/runtime/software/external/opencv/4.6.0/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include;/usr/include/c++/11;/usr/include/c++/11/x86_64-redhat-linux;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (PROJECT)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze]
+        ignore line: []
+        ignore line: [Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4ef5c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4ef5c.dir/build.make CMakeFiles/cmTC_4ef5c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-HrMcze']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o -c /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4ef5c.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4ef5c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/cct22Ba2.s]
+        ignore line: [GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /oscar/runtime/software/external/opencv/4.6.0/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 2b66e0c66ead0d50ab6859cd4e0e015c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4ef5c.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o /tmp/cct22Ba2.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4ef5c]
+        ignore line: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ef5c.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4ef5c ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4ef5c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_4ef5c.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6SiANm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4ef5c /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6SiANm.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4ef5c] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_4ef5c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/oscar/runtime/software/external/opencv/4.6.0/lib64;/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (FIND_PACKAGE)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM"
+      binary: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM
+        
+        Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_981ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_981ba.dir/build.make CMakeFiles/cmTC_981ba.dir/build
+        gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM'
+        Building C object CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o
+        /usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o -c /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM/OpenMPTryFlag.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_981ba.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v -D_REENTRANT /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_981ba.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64-v2 -version -fopenmp -o /tmp/ccXrG2Hf.s
+        GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /oscar/runtime/software/external/opencv/4.6.0/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: c17ca59e3175c87d67f78aafb97927e1
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_981ba.dir/'
+         as -v --64 -o CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o /tmp/ccXrG2Hf.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_981ba
+        /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_981ba.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp -v -rdynamic CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o -o cmTC_981ba  -v 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/x86_64-redhat-linux/11/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_981ba' '-v' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'cmTC_981ba.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfvxohg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_981ba /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_981ba' '-v' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'cmTC_981ba.'
+        gmake[1]: Leaving directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:262 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (FIND_PACKAGE)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM]
+        ignore line: []
+        ignore line: [Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_981ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_981ba.dir/build.make CMakeFiles/cmTC_981ba.dir/build]
+        ignore line: [gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM']
+        ignore line: [Building C object CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o -c /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM/OpenMPTryFlag.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_981ba.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v -D_REENTRANT /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-IbhbOM/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_981ba.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64-v2 -version -fopenmp -o /tmp/ccXrG2Hf.s]
+        ignore line: [GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /oscar/runtime/software/external/opencv/4.6.0/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: c17ca59e3175c87d67f78aafb97927e1]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_981ba.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o /tmp/ccXrG2Hf.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_981ba]
+        ignore line: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_981ba.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -fopenmp -v -rdynamic CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o -o cmTC_981ba  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/x86_64-redhat-linux/11/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_981ba' '-v' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'cmTC_981ba.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfvxohg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_981ba /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadend.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccfvxohg.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_981ba] ==> ignore
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_981ba.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/oscar/runtime/software/external/opencv/4.6.0/lib64;/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (FIND_PACKAGE)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c"
+      binary: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c
+        
+        Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6194b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6194b.dir/build.make CMakeFiles/cmTC_6194b.dir/build
+        gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c'
+        Building CXX object CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o -c /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c/OpenMPTryFlag.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6194b.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_6194b.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -fopenmp -o /tmp/ccmIOev5.s
+        GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /oscar/runtime/software/external/opencv/4.6.0/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3
+         /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 2b66e0c66ead0d50ab6859cd4e0e015c
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6194b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o /tmp/ccmIOev5.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_6194b
+        /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6194b.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -v -rdynamic CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o -o cmTC_6194b  -v 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/x86_64-redhat-linux/11/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_6194b' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'cmTC_6194b.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNMa22P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6194b /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_6194b' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'cmTC_6194b.'
+        gmake[1]: Leaving directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:262 (message)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (FIND_PACKAGE)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c]
+        ignore line: []
+        ignore line: [Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6194b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6194b.dir/build.make CMakeFiles/cmTC_6194b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o -c /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c/OpenMPTryFlag.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6194b.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-ofgf7c/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_6194b.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -fopenmp -o /tmp/ccmIOev5.s]
+        ignore line: [GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /oscar/runtime/software/external/opencv/4.6.0/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/include]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include/eigen3]
+        ignore line: [ /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/eigen-3.4.0-uycckhibhnqfphff5wrjc4gspjr6iwxf/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.3.1 20221121 (Red Hat 11.3.1-4) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.3.1 20221121 (Red Hat 11.3.1-4)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 2b66e0c66ead0d50ab6859cd4e0e015c]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6194b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o /tmp/ccmIOev5.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-37.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_6194b]
+        ignore line: [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6194b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -fopenmp -v -rdynamic CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o -o cmTC_6194b  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/oscar/runtime/software/external/opencv/4.6.0/lib64/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib/:/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/x86_64-redhat-linux/11/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_6194b' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-pthread' '-dumpdir' 'cmTC_6194b.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNMa22P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6194b /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadbegin.o -L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/oscar/runtime/software/external/opencv/4.6.0/lib64 -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o /usr/lib/gcc/x86_64-redhat-linux/11/crtoffloadend.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccNMa22P.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6194b] ==> ignore
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> dir [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+          arg [-L/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_6194b.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64/../lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/oscar/runtime/software/external/opencv/4.6.0/lib64] ==> [/oscar/runtime/software/external/opencv/4.6.0/lib64]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib]
+        collapse library dir [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib] ==> [/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/oscar/runtime/software/external/opencv/4.6.0/lib64;/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/boost-1.80.0-harukoycghoq6exyzhd3jonvup3gpqeo/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib;/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:26 (FIND_PACKAGE)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-JxNUR8"
+      binary: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-JxNUR8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-JxNUR8
+        
+        Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96e30/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_96e30.dir/build.make CMakeFiles/cmTC_96e30.dir/build
+        gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-JxNUR8'
+        Building C object CMakeFiles/cmTC_96e30.dir/OpenMPCheckVersion.c.o
+        /usr/bin/cc   -fopenmp -o CMakeFiles/cmTC_96e30.dir/OpenMPCheckVersion.c.o -c /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-JxNUR8/OpenMPCheckVersion.c
+        Linking C executable cmTC_96e30
+        /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96e30.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp -rdynamic CMakeFiles/cmTC_96e30.dir/OpenMPCheckVersion.c.o -o cmTC_96e30 
+        gmake[1]: Leaving directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-JxNUR8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/share/cmake-3.26/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:26 (FIND_PACKAGE)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-8IG8uF"
+      binary: "/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-8IG8uF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-8IG8uF
+        
+        Run Build Command(s):/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_14cf9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14cf9.dir/build.make CMakeFiles/cmTC_14cf9.dir/build
+        gmake[1]: Entering directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-8IG8uF'
+        Building CXX object CMakeFiles/cmTC_14cf9.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -fopenmp -o CMakeFiles/cmTC_14cf9.dir/OpenMPCheckVersion.cpp.o -c /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-8IG8uF/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_14cf9
+        /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/cmake-3.26.3-xi6h36u7udrui6ecslslsh4gak4djiwq/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14cf9.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -rdynamic CMakeFiles/cmTC_14cf9.dir/OpenMPCheckVersion.cpp.o -o cmTC_14cf9 
+        gmake[1]: Leaving directory '/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/CMakeScratch/TryCompile-8IG8uF'
+        
+      exitCode: 0
+...
