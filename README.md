@@ -1,17 +1,7 @@
-# CSS Object Recognition System
+# CSS Image Generation and Object recognition
+This project is dedicated to generate CSS image for any silhouette-based image. The project contains offline version and interactive version for better understanding of CSS image. 
 
-A Curvature Scale Space (CSS) based object recognition system implementing the Mokhtarian-Mackworth algorithm for shape analysis and matching.
-
-## Features
-
-- **Edge Detection & Contour Extraction**: Automatic boundary detection using OpenCV
-- **Multi-scale Gaussian Smoothing**: Progressive curve simplification at different scales
-- **Curvature Computation**: Calculate curvature at each point on smoothed contours
-- **CSS Image Generation**: Create 2D fingerprints showing zero-crossings across scales
-- **Shape Matching**: Compare shapes using CSS features and TOED distance
-- **Visualization**: Generate animated GIFs showing smoothing progression
-- **Live Recognition**: Real-time shape recognition from webcam
-
+Object Recognition is still under development. 
 ## Build Instructions
 
 ```bash
@@ -29,7 +19,7 @@ make -j4
 
 ## Usage
 
-### 1. Demo Mode - Generate CSS Animation
+### 1. Demo Offline Mode - Generate CSS Animation
 
 Process a single image and create a GIF animation showing the smoothing process:
 
@@ -42,43 +32,24 @@ This will generate:
 - `image_animation.gif` - Animated progression of smoothing
 - `image_animation_frames/` - Individual frames
 
-### 2. Build Database Mode
-
-Create a shape database from a directory of images:
-
+You can also run gif generation command by
 ```bash
-./bin/css_recognition_app build database/shapes/
+python3 create_gif.py ath/to/image.png path/to/image.gif 150
 ```
 
-This will:
-- Process all images in the directory
-- Extract contours and compute CSS for each
-- Save to `shape_database.dat`
+### 2. Interactive CSS Image Demo
 
-### 3. Recognition Mode
+CSS image has 2 axis: arc length as its y axis, and Gaussian filter width as its x axis. This demo allows you tweak around Gaussian filter width to see what the smoothed image is like and where it is located in CSS image. 
 
-Recognize a shape by comparing against the database:
-
+To run the demo, you can use the script:
 ```bash
-./bin/css_recognition_app recognize query.png
+sh run_interactive.sh
+```
+Then run it with your input image:
+```bash
+./run_interactive.sh path/to/image.png
 ```
 
-Output:
-- Top 5 matching shapes with distance scores
-- Visualization showing query and matches
-- Saved to `query_matches.png`
-
-### 4. Webcam Mode - Live Recognition
-
-Real-time shape recognition from webcam:
-
-```bash
-./bin/css_recognition_app webcam
-```
-
-Controls:
-- **SPACE** - Capture current frame and recognize
-- **Q** or **ESC** - Quit
 
 ## Algorithm Overview
 
@@ -90,12 +61,6 @@ Controls:
 4. **Zero-Crossing Detection**: Find inflection points where curvature changes sign
 5. **CSS Image**: Plot zero-crossings as (arc length, σ) points
 
-### Shape Matching
-
-- Uses TOED (Time-Ordered Edit Distance) to compare CSS representations
-- Handles rotation, scale, and partial occlusion
-- Returns ranked matches with distance scores
-
 ## Dependencies
 
 - **OpenCV** (4.0+) - Image processing and visualization
@@ -104,6 +69,11 @@ Controls:
 - **Boost** - Utilities
 - **ImageMagick** (optional) - GIF generation via `convert` command
 
+For Brown Oscar User, try building the project with provided script:
+
+```bash
+sh quickstart.sh
+```
 ## References
 
 - Mokhtarian, F., & Mackworth, A. (1992). "A Theory of Multiscale, Curvature-Based Shape Representation for Planar Curves" IEEE TPAMI
@@ -111,6 +81,6 @@ Controls:
 
 ## Author
 
-Jue Han (jhan192@brown.edu)  
+Jue Han (jue_han@brown.edu)  
 LEMS, Brown University  
 November 2024

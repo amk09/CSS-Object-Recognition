@@ -18,29 +18,6 @@ echo ""
 # Create test directory
 mkdir -p test_shapes
 
-# Create simple test shapes using ImageMagick (if available)
-if command -v convert &> /dev/null; then
-    echo "Creating test shapes..."
-    
-    # Circle
-    convert -size 200x200 xc:white -fill black -draw "circle 100,100 100,50" test_shapes/circle.png
-    
-    # Square
-    convert -size 200x200 xc:white -fill black -draw "rectangle 50,50 150,150" test_shapes/square.png
-    
-    # Triangle
-    convert -size 200x200 xc:white -fill black -draw "polygon 100,30 30,170 170,170" test_shapes/triangle.png
-    
-    # Star
-    convert -size 200x200 xc:white -fill black -draw "polygon 100,20 120,80 180,80 130,120 150,180 100,140 50,180 70,120 20,80 80,80" test_shapes/star.png
-    
-    echo "Test shapes created in test_shapes/"
-else
-    echo "ImageMagick not found. Please create test images manually in test_shapes/"
-    echo "Continuing with existing images..."
-fi
-
-echo ""
 
 # Build the project
 if [ ! -f "bin/css_recognition_app" ]; then
@@ -53,29 +30,11 @@ if [ ! -f "bin/css_recognition_app" ]; then
     echo ""
 fi
 
-# Run demo if shapes exist
-if [ -f "test_shapes/circle.png" ]; then
-    echo "Running demo on circle..."
-    ./bin/css_recognition_app demo test_shapes/circle.png
-    echo ""
-fi
-
-# Build database if multiple shapes exist
-SHAPE_COUNT=$(ls test_shapes/*.png 2>/dev/null | wc -l)
-if [ "$SHAPE_COUNT" -ge 2 ]; then
-    echo "Building shape database..."
-    ./bin/css_recognition_app build test_shapes/
-    echo ""
-    
-    echo "Testing recognition on square..."
-    ./bin/css_recognition_app recognize test_shapes/square.png
-    echo ""
-fi
 
 echo "=== Quick Start Complete ==="
 echo ""
 echo "Next steps:"
 echo "  1. Check the generated files (CSS images, GIF animations)"
 echo "  2. Add your own shapes to test_shapes/"
-echo "  3. Try: ./bin/css_recognition_app webcam"
+echo "  3. Try: ./bin/./bin/css_recognition_app demo test_shapes/your_image"
 echo ""
