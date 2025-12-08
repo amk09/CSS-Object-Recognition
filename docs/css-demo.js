@@ -59,12 +59,154 @@ class CSSDemo {
             const img = new Image();
             img.onload = () => {
                 this.originalImage = img;
-                this.processImage();
+                this.extractContourFromImage(img);
                 this.showVisualization();
             };
             img.src = e.target.result;
         };
         reader.readAsDataURL(file);
+    }
+    
+    extractContourFromImage(img) {
+        // Create canvas to process image
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Scale down large images
+        const maxDim = 600;
+        let width = img.width;
+        let height = img.height;
+        
+        if (width > maxDim || height > maxDim) {
+            const scale = maxDim / Math.max(width, height);
+            width = Math.floor(width * scale);
+            height = Math.floor(height * scale);
+        }
+        
+        canvas.width = width;
+        canvas.height = height;
+        
+        // Draw image
+        ctx.drawImage(img, 0, 0, width, height);
+        
+        // Get image data
+        const imageData = ctx.getImageData(0, 0, width, height);
+        const data = imageData.data;
+        
+        // Convert to grayscale and threshold
+        const threshold = 128;
+        const edges = [];
+        
+        for (let y = 1; y < height - 1; y++) {
+            for (let x = 1; x < width - 1; x++) {
+                const idx = (y * width + x) * 4;
+                const gray = (data[idx] + data[idx + 1] + data[idx + 2]) / 3;
+                
+                // Simple edge detection
+                if (gray < threshold) {
+                    const hasWhiteNeighbor = this.checkNeighbors(data, x, y, width, height, threshold);
+                    if (hasWhiteNeighbor) {
+                        edges.push({ x, y });
+                    }
+                }
+            }
+        }
+        
+        // If we found edges, trace the contour
+        if (edges.length > 0) {
+            this.contours = this.traceContour(edges, width, height);
+        } else {
+            // Fallback: create rectangle around image
+            this.contours = this.createRectangleContour(width, height);
+        }
+        
+        this.processImage();
+    }
+    
+    checkNeighbors(data, x, y, width, height, threshold) {
+        const offsets = [
+            [-1, -1], [0, -1], [1, -1],
+            [-1, 0],           [1, 0],
+            [-1, 1],  [0, 1],  [1, 1]
+        ];
+        
+        for (const [dx, dy] of offsets) {
+            const nx = x + dx;
+            const ny = y + dy;
+            if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
+                const idx = (ny * width + nx) * 4;
+                const gray = (data[idx] + data[idx + 1] + data[idx + 2]) / 3;
+                if (gray >= threshold) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    traceContour(edges, width, height) {
+        if (edges.length === 0) return [];
+        
+        // Simple contour ordering: sort by angle from center
+        const centerX = width / 2;
+        const centerY = height / 2;
+        
+        edges.forEach(p => {
+            p.angle = Math.atan2(p.y - centerY, p.x - centerX);
+        });
+        
+        edges.sort((a, b) => a.angle - b.angle);
+        
+        // Subsample to get ~100-200 points
+        const targetPoints = 150;
+        const step = Math.max(1, Math.floor(edges.length / targetPoints));
+        const contour = [];
+        
+        for (let i = 0; i < edges.length; i += step) {
+            contour.push({
+                x: edges[i].x,
+                y: edges[i].y
+            });
+        }
+        
+        return contour;
+    }
+    
+    createRectangleContour(width, height) {
+        const margin = 20;
+        const points = [];
+        const pointsPerSide = 25;
+        
+        // Top
+        for (let i = 0; i < pointsPerSide; i++) {
+            points.push({ 
+                x: margin + (i / pointsPerSide) * (width - 2 * margin), 
+                y: margin 
+            });
+        }
+        // Right
+        for (let i = 0; i < pointsPerSide; i++) {
+            points.push({ 
+                x: width - margin, 
+                y: margin + (i / pointsPerSide) * (height - 2 * margin) 
+            });
+        }
+        // Bottom
+        for (let i = 0; i < pointsPerSide; i++) {
+            points.push({ 
+                x: width - margin - (i / pointsPerSide) * (width - 2 * margin), 
+                y: height - margin 
+            });
+        }
+        // Left
+        for (let i = 0; i < pointsPerSide; i++) {
+            points.push({ 
+                x: margin, 
+                y: height - margin - (i / pointsPerSide) * (height - 2 * margin) 
+            });
+        }
+        
+        return points;
     }
     
     generateCircle() {
@@ -159,9 +301,8 @@ class CSSDemo {
     }
     
     processImage() {
-        if (!this.contours) {
-            // Extract contours from image (simplified version)
-            // In production, this would use OpenCV.js
+        if (!this.contours || this.contours.length === 0) {
+            console.error('No contours available');
             return;
         }
         
@@ -309,14 +450,36 @@ class CSSDemo {
         
         if (smoothed.length === 0) return;
         
+        // Calculate bounding box
+        let minX = Infinity, maxX = -Infinity;
+        let minY = Infinity, maxY = -Infinity;
+        
+        smoothed.forEach(p => {
+            minX = Math.min(minX, p.x);
+            maxX = Math.max(maxX, p.x);
+            minY = Math.min(minY, p.y);
+            maxY = Math.max(maxY, p.y);
+        });
+        
+        // Calculate scale and offset to fit in canvas with padding
+        const padding = 50;
+        const contentWidth = maxX - minX;
+        const contentHeight = maxY - minY;
+        const scaleX = (canvas.width - 2 * padding) / contentWidth;
+        const scaleY = (canvas.height - 2 * padding) / contentHeight;
+        const scale = Math.min(scaleX, scaleY);
+        
+        const offsetX = padding + (canvas.width - 2 * padding - contentWidth * scale) / 2 - minX * scale;
+        const offsetY = padding + (canvas.height - 2 * padding - contentHeight * scale) / 2 - minY * scale;
+        
         // Draw contour
         ctx.strokeStyle = '#667eea';
         ctx.lineWidth = 2;
         ctx.beginPath();
-        ctx.moveTo(smoothed[0].x, smoothed[0].y);
+        ctx.moveTo(smoothed[0].x * scale + offsetX, smoothed[0].y * scale + offsetY);
         
         for (let i = 1; i < smoothed.length; i++) {
-            ctx.lineTo(smoothed[i].x, smoothed[i].y);
+            ctx.lineTo(smoothed[i].x * scale + offsetX, smoothed[i].y * scale + offsetY);
         }
         ctx.closePath();
         ctx.stroke();
@@ -325,7 +488,7 @@ class CSSDemo {
         ctx.fillStyle = '#764ba2';
         smoothed.forEach(p => {
             ctx.beginPath();
-            ctx.arc(p.x, p.y, 3, 0, 2 * Math.PI);
+            ctx.arc(p.x * scale + offsetX, p.y * scale + offsetY, 3, 0, 2 * Math.PI);
             ctx.fill();
         });
         
@@ -333,6 +496,7 @@ class CSSDemo {
         ctx.fillStyle = '#2c3e50';
         ctx.font = 'bold 16px Arial';
         ctx.fillText(`σ = ${this.currentSigma.toFixed(1)}`, 10, 25);
+        ctx.fillText(`Points: ${smoothed.length}`, 10, 45);
     }
     
     drawCSSImage() {
