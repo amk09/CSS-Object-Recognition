@@ -1,2 +1,2 @@
-./test_shapes/*
-./input
+test_shapes/
+input/
