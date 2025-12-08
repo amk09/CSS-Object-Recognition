@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtoed.a CMakeFiles/toed.dir/src/toed/cpu_toed.cpp.o
-/usr/bin/ranlib libtoed.a
