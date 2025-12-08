@@ -165,6 +165,43 @@ css_recognition_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/css_recognition_app.dir/build.make CMakeFiles/css_recognition_app.dir/build
 .PHONY : css_recognition_app/fast
 
+#=============================================================================
+# Target rules for targets named css_interactive
+
+# Build rule for target.
+css_interactive: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 css_interactive
+.PHONY : css_interactive
+
+# fast build rule for target.
+css_interactive/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/css_interactive.dir/build.make CMakeFiles/css_interactive.dir/build
+.PHONY : css_interactive/fast
+
+cmd/css_interactive.o: cmd/css_interactive.cpp.o
+.PHONY : cmd/css_interactive.o
+
+# target to build an object file
+cmd/css_interactive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/css_interactive.dir/build.make CMakeFiles/css_interactive.dir/cmd/css_interactive.cpp.o
+.PHONY : cmd/css_interactive.cpp.o
+
+cmd/css_interactive.i: cmd/css_interactive.cpp.i
+.PHONY : cmd/css_interactive.i
+
+# target to preprocess a source file
+cmd/css_interactive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/css_interactive.dir/build.make CMakeFiles/css_interactive.dir/cmd/css_interactive.cpp.i
+.PHONY : cmd/css_interactive.cpp.i
+
+cmd/css_interactive.s: cmd/css_interactive.cpp.s
+.PHONY : cmd/css_interactive.s
+
+# target to generate assembly for a file
+cmd/css_interactive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/css_interactive.dir/build.make CMakeFiles/css_interactive.dir/cmd/css_interactive.cpp.s
+.PHONY : cmd/css_interactive.cpp.s
+
 cmd/css_recognition.o: cmd/css_recognition.cpp.o
 .PHONY : cmd/css_recognition.o
 
@@ -270,9 +307,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... css_interactive"
 	@echo "... css_recognition"
 	@echo "... css_recognition_app"
 	@echo "... toed"
+	@echo "... cmd/css_interactive.o"
+	@echo "... cmd/css_interactive.i"
+	@echo "... cmd/css_interactive.s"
 	@echo "... cmd/css_recognition.o"
 	@echo "... cmd/css_recognition.i"
 	@echo "... cmd/css_recognition.s"

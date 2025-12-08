@@ -196,3 +196,7 @@ target_include_directories(css_recognition PUBLIC ${PROJECT_SOURCE_DIR}/include)
 #> Main executable
 add_executable(css_recognition_app cmd/css_recognition.cpp)
 target_link_libraries(css_recognition_app css_recognition toed ${THIRD_PARTY_LIBS})
+
+#> Interactive visualization tool
+add_executable(css_interactive cmd/css_interactive.cpp)
+target_link_libraries(css_interactive css_recognition toed ${THIRD_PARTY_LIBS})

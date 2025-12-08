@@ -1,6 +1,7 @@
 /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/toed.dir
 /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/css_recognition.dir
 /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/css_recognition_app.dir
+/oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/css_interactive.dir
 /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/test.dir
 /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/edit_cache.dir
 /oscar/home/jhan192/CSS-Object-Recognition/build/CMakeFiles/rebuild_cache.dir
