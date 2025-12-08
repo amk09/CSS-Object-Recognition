@@ -49,6 +49,11 @@ Then run it with your input image:
 ```bash
 ./run_interactive.sh path/to/image.png
 ```
+Quick Demo:
+
+
+https://github.com/user-attachments/assets/ff8680c2-6584-4132-ab98-a55100650d1c
+
 
 
 ## Algorithm Overview
