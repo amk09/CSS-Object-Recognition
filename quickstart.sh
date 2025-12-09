@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Quick start script for CSS Object Recognition
-# This creates some test shapes and runs the demo
+rm -r -f build
+rm -r -f bin
 module_loaded() {
     module list 2>&1 | grep -q "$1"
 }
@@ -36,5 +37,5 @@ echo ""
 echo "Next steps:"
 echo "  1. Check the generated files (CSS images, GIF animations)"
 echo "  2. Add your own shapes to test_shapes/"
-echo "  3. Try: ./bin/./bin/css_recognition_app demo test_shapes/your_image"
+echo "  3. Try: ./run.sh demo path/to/your/image.png"
 echo ""

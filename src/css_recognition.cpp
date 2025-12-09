@@ -58,8 +58,8 @@ void demoMode(const std::string &imagePath)
 
     // Compute CSS
     std::cout << "Computing CSS..." << std::endl;
-    double maxSigma = 100.0;  // Increased to 100 for stronger convergence to ellipse/circle
-    int numScales = 50;       // More scales for smoother progression
+    double maxSigma = 100.0; // Increased to 100 for stronger convergence to ellipse/circle
+    int numScales = 50;      // More scales for smoother progression
     auto cssImg = cssComputer.computeCSS(contour, maxSigma, numScales);
     std::cout << "Zero crossings found: " << cssImg.zeroCrossings.size() << std::endl;
 

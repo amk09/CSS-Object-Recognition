@@ -60,6 +60,9 @@ namespace css
         cv::Mat visualizeContour(const std::vector<cv::Point> &contour,
                                  const std::vector<double> &curvature,
                                  cv::Size imgSize = cv::Size(512, 512));
+        cv::Mat visualizeContour(const std::vector<ContourPoint> &smoothedContour,
+                                 const std::vector<double> &curvature,
+                                 cv::Size imgSize = cv::Size(512, 512));
         cv::Mat visualizeCSSImage(const CSSImage &css);
         std::vector<cv::Mat> generateProgressFrames(const std::vector<cv::Point> &contour,
                                                     double maxSigma,

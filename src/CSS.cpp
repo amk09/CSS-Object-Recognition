@@ -446,6 +446,8 @@ namespace css
         // Draw contour with curvature color coding
         if (!curvature.empty())
         {
+            auto crossings = findZeroCrossings(curvature);
+            int crossing_idx = 0;
             double maxCurv = *std::max_element(curvature.begin(), curvature.end());
             double minCurv = *std::min_element(curvature.begin(), curvature.end());
             double range = maxCurv - minCurv;
@@ -457,8 +459,93 @@ namespace css
                 // Color based on curvature (blue=negative, red=positive)
                 double normalized = (curvature[i] - minCurv) / (range + 1e-10);
                 cv::Scalar color(255 * (1 - normalized), 0, 255 * normalized);
-
                 cv::line(vis, scaled[i], scaled[next], color, 2);
+
+                if (crossing_idx < crossings.size() && i == crossings[crossing_idx])
+                {
+                    // it's a zero crossing - mark with green circle
+                    cv::circle(vis, scaled[i], 5, cv::Scalar(0, 255, 0), -1);
+                    crossing_idx++;
+                }
+            }
+        }
+        else
+        {
+            // Just draw the contour
+            cv::polylines(vis, scaled, true, cv::Scalar(0, 255, 0), 2);
+        }
+
+        return vis;
+    }
+
+    // Overloaded version that uses arc length from smoothed contour
+    cv::Mat CSS::visualizeContour(const std::vector<ContourPoint> &smoothedContour,
+                                  const std::vector<double> &curvature,
+                                  cv::Size imgSize)
+    {
+        cv::Mat vis = cv::Mat::zeros(imgSize, CV_8UC3);
+
+        if (smoothedContour.empty())
+            return vis;
+
+        // Convert to cv::Point and find bounding box
+        std::vector<cv::Point> contour;
+        for (const auto &pt : smoothedContour)
+        {
+            contour.push_back(cv::Point(static_cast<int>(pt.x), static_cast<int>(pt.y)));
+        }
+        cv::Rect bbox = cv::boundingRect(contour);
+
+        // Scale and translate to fit image
+        double scale = std::min((imgSize.width - 40.0) / bbox.width,
+                                (imgSize.height - 40.0) / bbox.height);
+
+        std::vector<cv::Point> scaled;
+        for (const auto &pt : contour)
+        {
+            int x = static_cast<int>((pt.x - bbox.x) * scale + 20);
+            int y = static_cast<int>((pt.y - bbox.y) * scale + 20);
+            scaled.push_back(cv::Point(x, y));
+        }
+
+        // Draw contour with curvature color coding
+        if (!curvature.empty())
+        {
+            auto crossings = findZeroCrossings(curvature);
+            double maxCurv = *std::max_element(curvature.begin(), curvature.end());
+            double minCurv = *std::min_element(curvature.begin(), curvature.end());
+            double range = maxCurv - minCurv;
+
+            for (size_t i = 0; i < scaled.size(); i++)
+            {
+                int next = (i + 1) % scaled.size();
+
+                // Color based on curvature (blue=negative, red=positive)
+                double normalized = (curvature[i] - minCurv) / (range + 1e-10);
+                cv::Scalar color(255 * (1 - normalized), 0, 255 * normalized);
+                cv::line(vis, scaled[i], scaled[next], color, 2);
+            }
+
+            // Draw zero crossings with arc length annotations
+            for (int idx : crossings)
+            {
+                // Draw green circle at zero crossing
+                cv::circle(vis, scaled[idx], 6, cv::Scalar(0, 255, 0), -1);
+                cv::circle(vis, scaled[idx], 7, cv::Scalar(255, 255, 255), 1);
+
+                // Get arc length and format it
+                double arcLen = smoothedContour[idx].arcLength;
+                std::string label = std::to_string(arcLen).substr(0, 4);
+
+                // Position text above and to the right of the point
+                cv::Point textPos = scaled[idx] + cv::Point(10, -10);
+
+                // Draw text background
+                cv::putText(vis, label, textPos, cv::FONT_HERSHEY_SIMPLEX,
+                            0.4, cv::Scalar(0, 0, 0), 3, cv::LINE_AA);
+                // Draw text
+                cv::putText(vis, label, textPos, cv::FONT_HERSHEY_SIMPLEX,
+                            0.4, cv::Scalar(0, 255, 0), 1, cv::LINE_AA);
             }
         }
         else

@@ -22,18 +22,11 @@ void updateVisualization(int, void *)
     // Smooth contour at current sigma
     auto smoothedContour = g_cssComputer->smoothContour(*g_originalContour, sigma);
 
-    // Convert to cv::Point for visualization
-    std::vector<cv::Point> smoothedPts;
-    for (const auto &pt : smoothedContour)
-    {
-        smoothedPts.push_back(cv::Point(static_cast<int>(pt.x), static_cast<int>(pt.y)));
-    }
-
     // Compute curvature
     auto curvature = g_cssComputer->computeCurvature(smoothedContour);
 
-    // Visualize smoothed contour
-    cv::Mat contourVis = g_cssComputer->visualizeContour(smoothedPts, curvature);
+    // Visualize smoothed contour with arc length annotations
+    cv::Mat contourVis = g_cssComputer->visualizeContour(smoothedContour, curvature);
 
     // Add sigma text
     std::string sigmaText = "Sigma = " + std::to_string(sigma).substr(0, 5);
@@ -166,7 +159,7 @@ int main(int argc, char **argv)
         std::cout << "\n=== Interactive CSS Visualization ===" << std::endl;
         std::cout << "\nUsage: " << argv[0] << " <image_path>" << std::endl;
         std::cout << "\nExample:" << std::endl;
-        std::cout << "  " << argv[0] << " test_shapes/scissor.JPG" << std::endl;
+        std::cout << "  " << argv[0] << " test_shapes/fish.jpg" << std::endl;
         return 1;
     }
 

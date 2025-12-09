@@ -56,7 +56,7 @@ namespace recognition
         std::vector<ShapeEntry> recognizeShape(const cv::Mat &queryImage, int topK = 5);
         std::vector<ShapeEntry> recognizeShape(const std::vector<cv::Point> &queryContour, int topK = 5);
 
-        // Distance computation using TOED
+        // Distance computation
         double computeShapeDistance(const css::CSSImage &css1, const css::CSSImage &css2);
 
         // Configuration
