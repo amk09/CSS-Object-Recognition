@@ -74,7 +74,7 @@ Given inputed silhouette image, this program is able to recognize the object fro
 The input image should be one of the file types:
 `.png`, `.jpg`, `.jpeg`, `.bmp`, `.tif`.
 
-A summary of recognition image will be stored in the same folder of your input image.
+A summary of recognition image will be stored in the same folder with your input image.
 ## Algorithm Overview
 
 ### CSS (Curvature Scale Space)
